@@ -1,14 +1,17 @@
 <script lang="ts">
+  const createArray = (length: number) => Array.from({ length }, (_, i) => i)
+
   import Icon from "@iconify/svelte"
 
   import { writable, type Writable } from "svelte/store";
 
   let { cookieCount }: { cookieCount: Writable<number> } = $props()
 
-  let cookieList = writable(Array.from({ length: $cookieCount }, (_, i) => i))
+  let cookieList = writable(createArray($cookieCount))
 
   cookieCount.subscribe((value) => {
-    $cookieList = Array.from({ length: value }, (_, i) => i)
+    $cookieList = createArray(value)
+    console.log($cookieList)
   })
 </script>
 
