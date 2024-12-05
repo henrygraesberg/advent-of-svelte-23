@@ -1,7 +1,7 @@
 <script lang="ts">
   import type { PageData } from "./$types"
 
-  import { ChildList } from "$lib/components";
+  import { ChildList } from "$components";
 
   let { data }: { data: PageData } = $props()
 </script>
