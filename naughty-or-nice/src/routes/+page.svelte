@@ -6,7 +6,7 @@
   let { data }: { data: PageData } = $props()
 </script>
 
-<h1>Naughty or nice?</h1>
+<h1 class="text-center text-4xl m-3">Naughty or nice?</h1>
 <div>
   <ChildList childList={data.childList} />
 </div>
