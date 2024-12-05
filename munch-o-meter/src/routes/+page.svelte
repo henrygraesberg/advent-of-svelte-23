@@ -4,9 +4,8 @@
   import { MunchProgressBar, CookieButton } from "$components"
 
   const cookieCount = writable(0)
-
 </script>
 
-<MunchProgressBar cookieCount={$cookieCount} />
+<MunchProgressBar cookieCount={cookieCount} />
 
 <CookieButton cookieCount={cookieCount} />
