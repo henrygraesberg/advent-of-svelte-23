@@ -1,5 +1,12 @@
 <script lang="ts">
-  import { MunchProgressBar } from "$components";
+  import { writable } from "svelte/store"
+
+  import { MunchProgressBar, CookieButton } from "$components"
+
+  const cookieCount = writable(0)
+
 </script>
 
-<MunchProgressBar />
+<MunchProgressBar cookieCount={cookieCount} />
+
+<CookieButton cookieCount={cookieCount} />
