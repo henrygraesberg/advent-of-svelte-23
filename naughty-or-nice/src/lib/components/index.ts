@@ -1,1 +1,1 @@
-export { default as ChildCard } from "./ChildCard.svelte"
+export { default as ChildList } from "./ChildList.svelte"
