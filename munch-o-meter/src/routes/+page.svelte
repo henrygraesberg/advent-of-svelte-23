@@ -7,6 +7,6 @@
 
 </script>
 
-<MunchProgressBar cookieCount={cookieCount} />
+<MunchProgressBar cookieCount={$cookieCount} />
 
 <CookieButton cookieCount={cookieCount} />
